@@ -1,0 +1,61 @@
+// estilos de music con mobile first
+main{
+    .padre-m{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .musica-coder{
+            background-color: #940802;
+            margin: 0.5em;
+            border: solid 2px black;
+            color: white;
+        }
+        .galeria-conten.mobile-none{
+            display: none;
+        }
+        .galeria-conten{
+            display: flex;
+            background-color:#940802 ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+            margin: 2em;
+            border:solid 3px black;
+            .img-txt{
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+                img:hover{
+                    border: solid 2px gold;
+                }
+                p{
+                    font-size: 2em;
+                }
+                p:hover{
+                    color: gold;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px){
+    main{
+        .padre-m{
+            .galeria-conten{
+                flex-direction: row;
+                gap: 1em;
+                margin: 1em;
+            }
+            .galeria-conten.mobile-none{
+                display: flex;
+                justify-content:center ;
+                align-items: center;
+                padding: 1em;
+                margin: 1em;
+                border: solid 3px black;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+// EStilos products mobile first
+main{
+    .padre-product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .formas-pago{
+            background: gainsboro;
+            text-align: center;
+            padding: 1em;
+            margin: 1em;
+            border: solid 1px black;
+            border-radius: 10px;
+            span{
+                button{
+                    padding: 0.2em;
+                    border-radius: 10px;
+                    background-color: #940802;
+                    color: white;
+                    border: solid 2px black;
+                }
+            }
+        }
+        .galeri-product{
+            display: flex;
+            flex-direction: column;
+            .img-precio{
+                background: #940802;
+                border: solid 2px black;
+                margin: 0.5em 1em;
+                h4{
+                     color: greenyellow;
+                    margin-left: 0.5em;
+                }
+                h3{
+                    color: white;
+                    margin-left: 0.5em;
+                    margin-top: 0.5em;
+                 }
+                .img{
+                    img{
+                        height: 70%;
+                        width: 100%;
+                    }
+                }
+            }
+            .img-precio:hover{
+                background-color: greenyellow;
+            } 
+        }
+    }
+}
+@media screen and (min-width:992px){
+main{
+    .padre-product{
+        .formas-pago{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            span{
+                button{
+                    font-size: 2em;
+                    border: solid 3px black;
+                }
+                button:hover{
+                    color: #940802;
+                }
+            }
+        }
+        .galeri-product{
+            flex-direction: row;
+        }
+    }
+}
+}
+    
+    

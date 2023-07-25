@@ -1,0 +1,123 @@
+// estilos de contact con mobile first
+main{
+    .estamos{
+        text-align: center;
+        font-size: 2em;
+    }
+    .padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        margin: 1em;
+        .content-lugar{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: gainsboro;
+            border: solid 2px black;
+            border-radius: 15px;
+            font-size: 1em;
+            padding: 0.5em;
+            box-shadow:2px 4px 3px black;
+            .info-map{
+                font-size: 0.5em;
+            }
+        }
+        .galeria-contact{
+            display: flex;
+            background: black;
+            border: solid 5px black;
+            border-radius: 15px;
+            gap: 0.2em;
+            img{
+                height: 2em;
+                margin: 0 0.2em;
+            }
+        }
+        .comentario{
+            display: flex;
+            border-radius: 50px;
+            gap: 0.2em;
+            .comentario-input{
+                input{
+                    text-align: start;
+                    height: 2em;
+                    font-size: 1em;
+                }
+            }
+            .img-comentario{
+                img{
+                    height: 2em;
+                    background-color: aliceblue;
+                    border-radius: 50px;
+                }
+            }
+        }
+        span{
+            button{
+                background-color: #940802;
+                color: white;
+                height: 3em;
+                width: 5em;
+                border-radius: 15px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@media screen and (min-width:600px){
+    main{
+        .padre{
+            .galeria-contact{
+                img{
+                    height: 3em;
+                }
+            }
+            .content-lugar{
+                width: 80%;
+                .info-map{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px){
+    main{
+        .padre{
+            .content-lugar{
+                height: 70vh;
+                .mapa{
+                    width: 80%;
+                    height: 80%;
+                    margin-bottom: 0.3em;
+                    iframe{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            .galeria-contact{
+            img{
+                height: 4em;
+                }
+            }
+            .comentario{
+                .img-comentario{
+                    img{
+                        height: 3em;
+                    }
+                }
+                .comentario-input{
+                    input{
+                        height: 2em;
+                        font-size: 1.7em;
+                    }
+                }
+            }
+        }
+    }
+}

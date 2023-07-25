@@ -1,0 +1,160 @@
+// mobile first
+main{
+    .padre-perfil{
+        background: gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .img-port1{
+            display: none;
+        }
+        .img-portada{
+            img{
+                width: 80vw;
+                border-radius: 15px;
+                margin-top: 1em;
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+        }
+        .img-perfil{
+            display: flex;
+            position: relative;
+            top: -2.5em;
+
+            img{
+                height: 5em;
+                border: solid 1px black;
+            }
+        }
+        .nombre{
+            position: relative;
+            top: -1.2em;
+        }
+        .info-galeria{
+            background: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 80%;
+            top: -2em;
+            border-radius: 15px;
+            .info-perfil{
+                display: none;
+            }
+            .galeria-perfil{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.2em;
+                padding: 0.5em 1em;
+                img{
+                
+                    width: 100%;
+                    border-radius: 15px;
+                }
+            }
+            
+        }
+
+    }
+}
+
+@media screen and (min-width:400px){
+    main{
+        .padre-perfil{
+            .img-perfil{
+                width: 30%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+    }
+}
+@media screen and (min-width:992px){
+    main{
+        .padre-perfil{
+            .img-portada{
+                display: none;
+            }
+            .img-port1{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                height: 75vh;
+                img{
+                    height: 100vh;
+                    width: 90vw;
+                    border-radius: 15px;
+                }
+            }
+            .img-perfil{
+                display: flex;
+                justify-content: end;
+                position: relative;
+                top: -12em;
+                img{
+                    height: 15em;
+                    border-radius: 15px;
+                }
+            }
+            .nombre{
+                font-size: 4em;
+                top: -3em;
+                color: white;
+            }
+            .info-galeria{
+                position: relative;
+                top: -12em;
+                height: 35em;
+                width: 75em;
+                padding: 1em;
+                z-index: 2;
+                background: white;
+                display: flex;
+                border-radius: 15px;
+                .info-perfil{
+                    display: block;
+                    width: 30vw;
+                    font-size: 1.5em;
+                }
+                .galeria-perfil{
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    grid-template-rows: 60% 40%;
+                    background-color: aqua;
+                    width: 70%;
+                    height: 100%;
+                    border-radius: 15px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                        
+                    }
+                    .img-1{
+                        height: 100%;
+                        grid-column: span 2;
+                    }
+                    .img-2{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .img-3{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

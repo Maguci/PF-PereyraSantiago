@@ -1,0 +1,177 @@
+// desktop first
+main{
+    .padre-index{
+        background-color: gainsboro;
+        display: flex;
+        width: 100%;
+        .form-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+            padding-bottom: 2em;
+            .textos{
+                text-align: center;
+                color: black;
+                margin-left: 0.2em;
+                margin-right: 0.2em;
+                margin-bottom: 2em;
+                h1{
+                    font-size: 4em;
+                    margin-top: 0.2em;
+                }
+                h2{
+                    font-size: 3em;
+                }
+            }
+            .darth-icon-movil{
+                display: none;
+            }
+            .form{
+                background-color: gray;
+                box-shadow: 5px 4px 3px black;
+                width: 80%;
+                text-align: center;
+                fieldset{
+                    height: 8em;
+                    text-align: center;
+                    font-size: 2em;
+                    color: black;
+                    legend{
+                        color: white;
+                        background: #940802;
+                        font-size: 1em;
+                    }
+                    .name{
+                        label{
+                            display: block;
+                        }
+                    }
+                    .surname{
+                        label{
+                            display: block;
+                        }
+                    }
+                }
+                span{
+                    text-align: center;
+                    button{
+                        height: 3em;
+                        color: black    ;
+                        margin: 1em 0.5em;
+                        font-size: 1.5em;
+                        padding: 0 0.5em;
+                        box-shadow: 5px 4px 3px black; ;
+                    }
+                }
+            }
+        }
+        .darth-vader{
+            width: 55%;
+            img{
+                height: 100%;
+                width: 100%;
+                
+            } 
+        }
+    }
+}
+@media screen and (max-width:992px){
+    main{
+        .padre-index{
+            flex-direction: column;
+            align-items: center;
+            .form-text{
+                flex-direction: column-reverse;
+                width: 100%;
+                .textos{    
+                    font-size: 1em;
+                    margin-bottom: 0;
+                }
+                .form{
+                    width: 70%;
+                }
+            }
+            .darth-vader{
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        .padre-index{
+            .form-text{
+                flex-direction: column;
+                .darth-icon-movil{
+                    display: inline;
+                    width: 60%;
+                    margin: 1em;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .textos{
+                    h1{
+                        font-size: 2em;
+                    }
+                    h2{
+                        font-size: 2em;
+                    }
+                }
+                .form{
+                    fieldset{
+                        font-size: 1.5em;
+                    }
+                    span{
+                        button{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+            .darth-vader{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:400px){
+    main{
+        .padre-index{
+            .form-text{
+                flex-direction: column;
+                .darth-icon-movil{
+                    display: inline;
+                    width: 60%;
+                    margin: 1em;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .textos{
+                    h1{
+                        font-size: 1.5em;
+                    }
+                    h2{
+                        font-size: 1.5em;
+                    }
+                }
+                .form{
+                    fieldset{
+                        font-size: 1em;
+                    }
+                    span{
+                        button{
+                            font-size: 0.7em;
+                            padding: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
