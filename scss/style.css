@@ -5,10 +5,6 @@
   font-family: sans-serif;
 }
 
-body {
-  background-color: aliceblue;
-}
-
 header .menu-fondo {
   background: black;
 }
@@ -40,7 +36,7 @@ footer {
 }
 
 main .padre-index {
-  background-color: gainsboro;
+  background-color: #940802;
   display: flex;
   width: 100%;
 }
@@ -63,7 +59,7 @@ main .padre-index .form-text .textos h1 {
   margin-top: 0.2em;
 }
 main .padre-index .form-text .textos h2 {
-  font-size: 3em;
+  font-size: 120em;
 }
 main .padre-index .form-text .darth-icon-movil {
   display: none;

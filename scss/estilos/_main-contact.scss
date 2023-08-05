@@ -1,120 +1,179 @@
-// estilos de contact con mobile first
 main{
-    .estamos{
-        text-align: center;
-        font-size: 2em;
+    .peliculas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .carousel{
+            background: #fafafa10;
+            border: solid 1px #fafafa10 ;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1em 2em;
+            height: 400px;
+            width: 76%;
+            border-radius: 15px;
+            padding: 1em 0;
+            .carousel-inner{
+                width: 80%;
+                height: 100%;
+                .carousel-item{
+                    width: 100%;
+                    height: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
-    .padre{
+    .padre-entrete{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 1em;
-        margin: 1em;
-        .content-lugar{
+        .videojuegos{
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: gainsboro;
-            border: solid 2px black;
-            border-radius: 15px;
-            font-size: 1em;
-            padding: 0.5em;
-            box-shadow:2px 4px 3px black;
-            .info-map{
-                font-size: 0.5em;
-            }
-        }
-        .galeria-contact{
-            display: flex;
-            background: black;
-            border: solid 5px black;
-            border-radius: 15px;
-            gap: 0.2em;
-            img{
-                height: 2em;
-                margin: 0 0.2em;
-            }
-        }
-        .comentario{
-            display: flex;
-            border-radius: 50px;
-            gap: 0.2em;
-            .comentario-input{
-                input{
-                    text-align: start;
-                    height: 2em;
-                    font-size: 1em;
-                }
-            }
-            .img-comentario{
-                img{
-                    height: 2em;
-                    background-color: aliceblue;
-                    border-radius: 50px;
-                }
-            }
-        }
-        span{
-            button{
-                background-color: #940802;
-                color: white;
-                height: 3em;
-                width: 5em;
+            gap: 10%;
+            height: 400px;
+            width: 80%;
+            margin: 1.5em;
+            padding: 1.5em;
+            .jedi-fallen{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
                 border-radius: 15px;
-                margin-bottom: 50px;
-            }
-        }
-    }
-}
-@media screen and (min-width:600px){
-    main{
-        .padre{
-            .galeria-contact{
+                padding: 2em;
+                height: 100%;
+                width: 100%;
                 img{
-                    height: 3em;
+                    width: 100%;
+                    height: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
+                    }
+                }
+
+            }
+            .battle-front{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
+                border-radius: 15px;
+                padding: 2em;
+                height: 100%;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
+                    }
                 }
             }
-            .content-lugar{
-                width: 80%;
-                .info-map{
-                    font-size: 1.3em;
+            .force-unleashed{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
+                border-radius: 15px;
+                padding: 2em;
+                height: 100%;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
+                    }
                 }
             }
+
+
         }
-    }
-}
-@media screen and (min-width:992px){
-    main{
-        .padre{
-            .content-lugar{
-                height: 70vh;
-                .mapa{
-                    width: 80%;
-                    height: 80%;
-                    margin-bottom: 0.3em;
-                    iframe{
-                        height: 100%;
-                        width: 100%;
+        .series{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            height: 250px;
+            width: 80%;
+            margin: 1.5em;
+            padding: 1.5em;
+            .mandalorian{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
+                border-radius: 15px;
+                height: 100%;
+                width: 100%;
+                padding: 2em;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
                     }
                 }
             }
-            .galeria-contact{
-            img{
-                height: 4em;
+            .clone-wars{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
+                height: 100%;
+                width: 100%;
+                padding: 2em;
+                border-radius: 15px;
+                img{
+                    height: 100%;
+                    width: 100%;
                 }
-            }
-            .comentario{
-                .img-comentario{
-                    img{
-                        height: 3em;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
                     }
                 }
-                .comentario-input{
-                    input{
-                        height: 2em;
-                        font-size: 1.7em;
+            }
+            .rebels{
+                background: #fafafa10;
+                border: solid 1px #fafafa10 ;
+                backdrop-filter: blur(10px);
+                height: 100%;
+                width: 100%;
+                padding: 2em;
+                border-radius: 15px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        text-align: center;
                     }
                 }
             }
