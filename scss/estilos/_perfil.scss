@@ -2,6 +2,7 @@
 
 main{
     h1{
+        font-family: 'Anton', sans-serif;
         text-align: center;
         margin-top: 0.8em;
     }
@@ -19,17 +20,87 @@ main{
             backdrop-filter: blur(10px);
             border-radius: 15px;
             display: flex;
+            height: 300px;
             width: 80%;
             .img-perfil{
-                background-color: gray;
-                height: 200px;
+                height: 100%;
                 border-radius: 15px 0 0 15px;
-                
                 width: 30%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                    border-radius: 15px 0 0 15px;
+                }
             }
             .info{
+                margin-left: 1em;
                 width: 70%;
             }
         }
     }
 }
+@media screen and (max-width:800px){
+    main{
+        .padre-perfil{
+            .perfil{
+                width: 100%;
+                .info{
+                   width: 60%; 
+                }
+                .img-perfil{
+                    width: 40%;
+                }
+            }
+        }
+
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        .padre-perfil{
+            .perfil{
+                height: 200px;
+                width: 100%;
+                .img-perfil{
+                    height: 200px;
+                }
+                .info{
+                    h2{
+                        font-size: 12px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+// tambien funciona hasta 320px sin ningun problema
+    main{
+        .padre-perfil{
+            .perfil{
+                height: 150px;
+                width: 100%;
+                transition: all 200ms ease;
+                overflow: hidden;
+                &:hover{
+                    height: 200px;
+                    width: 110%;
+                    }
+                .info{
+                    margin-left:2px;
+                    h2{
+                        font-size: 10px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+                }    
+                }
+            }
+        }
+    }

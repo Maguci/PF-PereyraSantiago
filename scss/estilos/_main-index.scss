@@ -32,11 +32,12 @@ main{
                 margin-right: 0.2em;
                 margin-bottom: 2em;
                 h1{
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: 'Anton', sans-serif;
                     font-size: 4em;
                     margin-top: 0.2em;
                 }
                 h2{
+                    font-family: 'Anton', sans-serif;
                     font-size: 3em;
                 }
             }
@@ -54,17 +55,20 @@ main{
                     font-size: 2em;
                     color: white;
                     legend{
+                        font-family: 'Anton', sans-serif;
                         color: white;
                         background: #940802;
                         font-size: 1em;
                     }
                     .name{
                         label{
+                            font-family: 'Anton', sans-serif;
                             display: block;
                         }
                     }
                     .surname{
                         label{
+                            font-family: 'Anton', sans-serif;
                             display: block;
                         }
                     }
@@ -72,6 +76,7 @@ main{
                 span{
                     text-align: center;
                     button{
+                        font-family: 'Anton', sans-serif;
                         height: 3em;
                         color: black    ;
                         margin: 1em 0.5em;

@@ -39,9 +39,19 @@ header .pages-edit:hover {
 footer {
   background: black;
   color: white;
+  opacity: 0.8;
   box-shadow: 0 -10px 20px #940802;
   text-align: center;
   padding: 0.5em 0; }
+  footer p {
+    margin-top: 1em;
+    margin-bottom: 0.5em; }
+  footer .contacto a {
+    text-decoration: none;
+    font-size: 2em;
+    margin: 1em 0;
+    color: white;
+    opacity: 0.7; }
 
 body .imagen-fondo {
   position: fixed;
@@ -70,10 +80,11 @@ main .padre-index {
       margin-right: 0.2em;
       margin-bottom: 2em; }
       main .padre-index .form-text .textos h1 {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Anton', sans-serif;
         font-size: 4em;
         margin-top: 0.2em; }
       main .padre-index .form-text .textos h2 {
+        font-family: 'Anton', sans-serif;
         font-size: 3em; }
     main .padre-index .form-text .darth-icon-movil {
       display: none; }
@@ -87,16 +98,20 @@ main .padre-index {
         font-size: 2em;
         color: white; }
         main .padre-index .form-text .form fieldset legend {
+          font-family: 'Anton', sans-serif;
           color: white;
           background: #940802;
           font-size: 1em; }
         main .padre-index .form-text .form fieldset .name label {
+          font-family: 'Anton', sans-serif;
           display: block; }
         main .padre-index .form-text .form fieldset .surname label {
+          font-family: 'Anton', sans-serif;
           display: block; }
       main .padre-index .form-text .form span {
         text-align: center; }
         main .padre-index .form-text .form span button {
+          font-family: 'Anton', sans-serif;
           height: 3em;
           color: black;
           margin: 1em 0.5em;
@@ -172,6 +187,7 @@ main .padre-index {
       padding: 0.5em; } }
 
 main h1 {
+  font-family: 'Anton', sans-serif;
   text-align: center;
   margin-top: 0.8em; }
 
@@ -189,20 +205,66 @@ main .padre-perfil {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     display: flex;
+    height: 300px;
     width: 80%; }
     main .padre-perfil .perfil .img-perfil {
-      background-color: gray;
-      height: 200px;
+      height: 100%;
       border-radius: 15px 0 0 15px;
       width: 30%; }
+      main .padre-perfil .perfil .img-perfil img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 15px 0 0 15px; }
     main .padre-perfil .perfil .info {
+      margin-left: 1em;
       width: 70%; }
+
+@media screen and (max-width: 800px) {
+  main .padre-perfil .perfil {
+    width: 100%; }
+    main .padre-perfil .perfil .info {
+      width: 60%; }
+    main .padre-perfil .perfil .img-perfil {
+      width: 40%; } }
+
+@media screen and (max-width: 600px) {
+  main .padre-perfil .perfil {
+    height: 200px;
+    width: 100%; }
+    main .padre-perfil .perfil .img-perfil {
+      height: 200px; }
+    main .padre-perfil .perfil .info h2 {
+      font-size: 12px; }
+    main .padre-perfil .perfil .info p {
+      font-size: 12px; } }
+
+@media screen and (max-width: 500px) {
+  main .padre-perfil .perfil {
+    height: 150px;
+    width: 100%;
+    transition: all 200ms ease;
+    overflow: hidden; }
+    main .padre-perfil .perfil:hover {
+      height: 200px;
+      width: 110%; }
+    main .padre-perfil .perfil .info {
+      margin-left: 2px; }
+      main .padre-perfil .perfil .info h2 {
+        font-size: 10px; }
+      main .padre-perfil .perfil .info p {
+        font-size: 10px; } }
 
 main .peliculas {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  main .peliculas h1 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    opacity: 0.7; }
   main .peliculas .carousel {
     background: #fafafa10;
     border: solid 1px #fafafa10;
@@ -345,6 +407,76 @@ main .padre-entrete {
         main .padre-entrete .series .rebels a p {
           text-align: center; }
 
+@media screen and (max-width: 992px) {
+  main .peliculas .carousel {
+    height: 300px;
+    width: 80%; }
+  main .padre-entrete .videojuegos {
+    height: 200px;
+    width: 80%; }
+    main .padre-entrete .videojuegos .force-unleashed {
+      padding: 0; }
+      main .padre-entrete .videojuegos .force-unleashed img {
+        border-radius: 15px; }
+    main .padre-entrete .videojuegos .battle-front {
+      padding: 0; }
+      main .padre-entrete .videojuegos .battle-front img {
+        border-radius: 15px; }
+    main .padre-entrete .videojuegos .jedi-fallen {
+      padding: 0; }
+      main .padre-entrete .videojuegos .jedi-fallen img {
+        border-radius: 15px; }
+  main .padre-entrete .series {
+    height: 150px;
+    width: 80%; }
+    main .padre-entrete .series .clone-wars {
+      padding: 0; }
+      main .padre-entrete .series .clone-wars img {
+        border-radius: 15px; }
+    main .padre-entrete .series .rebels {
+      padding: 0; }
+      main .padre-entrete .series .rebels img {
+        border-radius: 15px; }
+    main .padre-entrete .series .mandalorian {
+      padding: 0; }
+      main .padre-entrete .series .mandalorian img {
+        border-radius: 15px; } }
+
+@media screen and (max-width: 600px) {
+  main .peliculas .carousel {
+    height: 260px;
+    width: 85%;
+    margin-bottom: 6em; }
+  main .padre-entrete {
+    margin: 5em 0;
+    flex-direction: column-reverse; }
+    main .padre-entrete .videojuegos {
+      width: 90%;
+      height: 300px;
+      gap: 0.5em; }
+    main .padre-entrete .series {
+      flex-direction: column;
+      height: 250px;
+      width: 90%;
+      margin-top: 5em;
+      margin-bottom: 14em;
+      gap: 20%; } }
+
+@media screen and (max-width: 400px) {
+  main .peliculas .carousel {
+    width: 90%;
+    height: 210px;
+    margin-bottom: 1em; }
+  main .padre-entrete .series {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 9em; }
+  main .padre-entrete .videojuegos {
+    width: 100%;
+    height: 200px; }
+    main .padre-entrete .videojuegos p {
+      font-size: 10px; } }
+
 body .imagen-fondo {
   position: fixed;
   width: 100%;
@@ -363,6 +495,9 @@ main {
     width: 100%;
     margin-top: 5%; }
     main .titulo h1 {
+      font-family: 'Anton', sans-serif;
+      color: white;
+      opacity: 0.6;
       padding: 5% 0; }
     main .titulo .img-titulo {
       position: absolute;
@@ -370,7 +505,7 @@ main {
       width: 70%; }
       main .titulo .img-titulo img {
         width: 100%;
-        opacity: 0.9;
+        opacity: 0.7;
         border-radius: 15px; }
   main .padre-galeri {
     display: grid;
@@ -398,7 +533,9 @@ main {
       main .padre-galeri .img-2 img {
         width: 100%;
         height: 100%;
-        border-radius: 15px; }
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center; }
     main .padre-galeri .img-3 {
       width: 100%;
       height: 100%;
@@ -422,7 +559,9 @@ main {
       main .padre-galeri .img-5 img {
         width: 100%;
         height: 100%;
-        border-radius: 15px; }
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: top; }
 
 @keyframes aparecerP {
   0% {
@@ -454,30 +593,36 @@ main .padre-m {
   flex-direction: column;
   text-align: center; }
   main .padre-m .musica-coder {
-    background-color: #940802;
-    margin: 0.5em;
-    border: solid 2px black;
-    color: white; }
+    color: white;
+    font-size: 2.5em;
+    opacity: 0.7; }
   main .padre-m .galeria-conten.mobile-none {
     display: none; }
   main .padre-m .galeria-conten {
+    background: #fafafa10;
+    border: solid 1px #fafafa10;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     display: flex;
-    background-color: #940802;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1em;
-    margin: 2em;
-    border: solid 3px black; }
-    main .padre-m .galeria-conten .img-txt img {
-      height: 100%;
-      width: 100%; }
-    main .padre-m .galeria-conten .img-txt img:hover {
-      border: solid 2px gold; }
-    main .padre-m .galeria-conten .img-txt p {
-      font-size: 2em; }
-    main .padre-m .galeria-conten .img-txt p:hover {
-      color: gold; }
+    margin: 2em; }
+    main .padre-m .galeria-conten .img-txt {
+      transition: all 200ms ease; }
+      main .padre-m .galeria-conten .img-txt:hover {
+        transform: scale(1.1); }
+        main .padre-m .galeria-conten .img-txt:hover p {
+          color: #940802; }
+      main .padre-m .galeria-conten .img-txt img {
+        height: 100%;
+        width: 100%; }
+      main .padre-m .galeria-conten .img-txt a {
+        text-decoration: none;
+        color: white; }
+        main .padre-m .galeria-conten .img-txt a p {
+          font-size: 1em; }
 
 @media screen and (min-width: 992px) {
   main .padre-m .galeria-conten {
@@ -489,5 +634,4 @@ main .padre-m {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    margin: 1em;
-    border: solid 3px black; } }
+    margin: 1em; } }

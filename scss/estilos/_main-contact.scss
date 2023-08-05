@@ -1,5 +1,11 @@
 main{
     .peliculas{
+        h1{
+            font-family: 'Anton', sans-serif;
+            color: white;
+            opacity: 0.7;
+
+        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -175,6 +181,116 @@ main{
                     p{
                         text-align: center;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px){
+    main{
+        .peliculas{
+           .carousel{
+            height: 300px;
+            width: 80%;
+           }
+        }
+        .padre-entrete{
+            .videojuegos{
+                height: 200px;
+                width: 80%;
+                .force-unleashed{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+                .battle-front{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+                .jedi-fallen{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+            }
+            .series{
+                height: 150px;
+                width: 80%;
+                .clone-wars{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+                .rebels{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+                .mandalorian{
+                    padding: 0;
+                    img{
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        .peliculas{
+           .carousel{
+            height: 260px;
+            width: 85%;
+            margin-bottom: 6em;
+           }
+        }
+        .padre-entrete{
+            margin: 5em 0;
+            flex-direction: column-reverse;
+            .videojuegos{
+                width: 90%;
+                height: 300px;
+                gap: 0.5em;
+            }
+            .series{
+                flex-direction: column;
+                height: 250px;
+                width: 90%;
+                margin-top: 5em;
+                margin-bottom: 14em;
+                gap: 20%;
+            }
+        }
+    }
+}
+@media screen and (max-width:400px){
+    main{
+        .peliculas{
+            .carousel{
+                width: 90%;
+                height: 210px;
+                margin-bottom: 1em;
+            }
+        }
+        .padre-entrete{
+            .series{
+                width: 100%;
+                height: 180px;
+                margin-bottom: 9em;
+            }
+            .videojuegos{
+                width: 100%;
+                height: 200px;
+                p{
+                    font-size: 10px;
                 }
             }
         }

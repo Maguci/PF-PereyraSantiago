@@ -5,36 +5,42 @@ main{
         flex-direction: column;
         text-align: center;
         .musica-coder{
-            background-color: #940802;
-            margin: 0.5em;
-            border: solid 2px black;
             color: white;
+            font-size: 2.5em;
+            opacity: 0.7;
         }
         .galeria-conten.mobile-none{
             display: none;
         }
         .galeria-conten{
+            background: #fafafa10;
+            border: solid 1px #fafafa10 ;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
             display: flex;
-            background-color:#940802 ;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 1em;
             margin: 2em;
-            border:solid 3px black;
             .img-txt{
+                transition: all 200ms ease;
+                &:hover{
+                    transform: scale(1.1);
+                    p{
+                        color: #940802;
+                    }
+                }
                 img{
                     height: 100%;
                     width: 100%;
                 }
-                img:hover{
-                    border: solid 2px gold;
-                }
-                p{
-                    font-size: 2em;
-                }
-                p:hover{
-                    color: gold;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    p{
+                        font-size: 1em;
+                    }
                 }
             }
         }
@@ -54,7 +60,6 @@ main{
                 align-items: center;
                 padding: 1em;
                 margin: 1em;
-                border: solid 3px black;
             }
         }
     }
